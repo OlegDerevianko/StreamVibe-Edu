@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     font-family: Manrope, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -37,8 +38,12 @@ body {
     --grey-97: #f7f7f8;
     --grey-99: #fcfcfd;
 }
+section {
+    background-color: var(--black-08);
 
+}
 main {
+
     @media screen and (min-width: 390px) {
         min-width: 390px;
         margin: auto;

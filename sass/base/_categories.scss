@@ -1,0 +1,169 @@
+.categories {
+    max-width: 390px;
+    margin: auto;
+    padding: 180px 16px 10px 16px; 
+    @media screen and (min-width: 1440px) {
+        min-width: 1440px;
+        padding: 287px 80px 60px 80px;
+    }
+    @media screen and (min-width: 1920px) {
+        min-width: 1920px;
+        padding: 287px 162px 75px 162px;
+    }
+    &__title {
+    @media screen and (min-width: 1440px) {
+        display: flex;
+        justify-content: space-between;
+    }    
+    }
+    &__title-name {
+        color: var(--absolute-white);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 150%;
+    @media screen and (min-width: 1440px) {
+        font-size: 28px;
+    }
+    @media screen and (min-width: 1920px) {
+        font-size: 38px;
+    }
+    }
+    &__title-description {
+        margin-top: 8px;
+        color: var(--grey-60);
+        line-height: 150%;
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
+            margin-top: 14px;
+        }
+    }   
+    &__title-btns {
+        display: none;
+        @media screen and (min-width: 1440px) {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            gap: 12px;
+            background-color: var(--black-06);
+            border-radius: 10px;
+            border: 1px solid rgb(31, 31, 31);
+        }
+        @media screen and (min-width: 1920px) { 
+            padding: 16px;
+            gap: 16px;
+            border-radius: 12px;
+        }
+    }
+    &__btn-prev, &__btn-next {
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+        border-radius: 6px;
+        border: 1px solid rgb(31, 31, 31);
+        background: rgb(26, 26, 26);
+        @media screen and (min-width: 1920px) { 
+            width: 56px;
+            height: 56px;
+        }
+    }
+    &__btn-icon {
+        @media screen and (min-width: 1920px) { 
+            width: 28px;
+            height: 28px;
+        }
+    }
+    &__list {
+        margin-top: 40px;
+        display: flex;
+        gap: 20px;
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 60px;
+        }
+        @media screen and (min-width: 1920px) {
+            margin-top: 80px;
+            gap: 30px;
+        }
+    }
+    &__item {
+        padding: 20px;
+        background: rgb(26, 26, 26);
+        border-radius: 10px;
+        border: 1px solid rgb(38, 38, 38);
+        @media screen and (min-width: 1440px) {
+            padding: 24px;
+        }
+        @media screen and (min-width: 1920px) {
+            padding: 30px;
+            border-radius: 12px;
+        }
+    }
+    &__item:nth-child(n+3) {
+        display: none;
+        @media screen and (min-width: 1440px) {
+            display: block;
+        }        
+    }
+    &__img {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    &__film-fade {
+        position: absolute;
+        width: 128px;
+        height: 135px;
+        background: linear-gradient(180.00deg, rgba(26, 26, 26, 0),rgb(26, 26, 26) 101.786%);
+        @media screen and (min-width: 1440px) {
+            width: 190px;
+            height: 202px;
+            }
+        @media screen and (min-width: 1920px) {
+            width: 233px;
+            height: 249px;
+        }
+    }
+    &__film-img {
+        width: 61px;
+        border-radius: 6px;
+        @media screen and (min-width: 1440px) {
+            width: 92px;
+        }
+        @media screen and (min-width: 1920px) {
+            width: 114px;
+            border-radius: 10px;
+        }
+    }
+    &__item-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
+    &__item-name {
+        color: var(--absolute-white);
+        font-weight: 600;
+        line-height: 150%;
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 16px;
+        }
+    }
+    &__item-icon {
+        @media screen and (min-width: 1440px) {
+            width: 24px;
+            height: 24px;
+        }
+        @media screen and (min-width: 1920px) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}

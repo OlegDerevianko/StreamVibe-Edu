@@ -8,57 +8,214 @@
     <link rel="stylesheet" href="./css/main.css">    
 
 </head>
-<body>
-    <header class="header">
-        <div class="header__logo">
-            <a class="header__logo-link" href="/index.html">
-                <svg class="header__logo-img" width="50px" height="50px" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-logo"></use>
-                </svg>
-                <svg class="header__logo-streamvibe" width="113px" height="17px"aria-hidden="true">
-                    <use href="./images/icons.svg#icon-streamvibe"></use>
-                </svg>
-            </a>
-        </div>        
-        <ul class="header__nav">            
-            <li class="header__nav-item current">
-                <a class="header__nav-link" href="/index.html">Home</a>
-            </li>
-            <li class="header__nav-item">
-                <a class="header__nav-link" href="">Movies & Shows</a>
-            </li>
-            <li class="header__nav-item">
-                <a class="header__nav-link" href="">Support</a>
-            </li>
-            <li class="header__nav-item">
-                <a class="header__nav-link" href="">Subscriptions</a>
-            </li>
-        </ul>
-        <div class="header__btn-container">
-            <button class="header__btn-search">
-                <svg class="search-icon" width="24px" height="24px"aria-hidden="true">
-                    <use href="./images/icons.svg#icon-search"></use>
-                </svg>
-            </button>
-            <button class="header__btn-notification">
-                <svg class="header__notification-icon" width="24px" height="24px"aria-hidden="true">
-                    <use href="./images/icons.svg#icon-notification"></use>
-                </svg>
-            </button>
-        </div>
-        <button class="header__mobile-open">
-            <svg class="header__open-icon" width="24px" height="24px"aria-hidden="true">
-                <use href="./images/icons.svg#icon-mobileopen"></use>
-            </svg>
-        </button>
-    </header>
+<body>   
+    
     <main>  
         <section class="hero">
-            <div class="hero__posters"></div>
+            <div class="nav">
+                <div class="nav__logo">
+                    <a class="nav__logo-link" href="/index.html">
+                        <svg class="nav__logo-img" width="50px" height="50px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-logo"></use>
+                        </svg>
+                        <svg class="nav__logo-streamvibe" width="113px" height="17px"aria-hidden="true">
+                            <use href="./images/icons.svg#icon-streamvibe"></use>
+                        </svg>
+                    </a>
+                </div>        
+                <ul class="nav__list">            
+                    <li class="nav__item current">
+                        <a class="nav__link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="">Movies & Shows</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="">Support</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="">Subscriptions</a>
+                    </li>
+                </ul>
+                <div class="nav__btn-container">
+                    <button class="nav__btn-search">
+                        <svg class="nav__search-icon" width="24px" height="24px"aria-hidden="true">
+                            <use href="./images/icons.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                    <button class="nav__btn-notification">
+                        <svg class="nav__notification-icon" width="24px" height="24px"aria-hidden="true">
+                            <use href="./images/icons.svg#icon-notification"></use>
+                        </svg>
+                    </button>
+                </div>
+                <button class="nav__mobile-open">
+                    <svg class="nav__open-icon" width="24px" height="24px"aria-hidden="true">
+                        <use href="./images/icons.svg#icon-mobileopen"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="hero__posters">
+                <div class="hero__posters-box">                    
+                    <img class="hero__posters-img" src="./images/heroimg/poster1440-1.png" alt=""/>
+                    <img class="hero__posters-img" src="./images/heroimg/poster1440-2.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1440-3.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1440-4.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1440-5.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1440-6.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1440-7.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1440-8.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1440-9.png" alt="">
+                </div>
+                <div class="hero__posters-box1">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1-1.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1-2.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1-3.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1-4.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1-5.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1-6.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1-7.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1-8.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster1-9.png" alt="">
+                </div>
+                <div class="hero__posters-box2">
+                    <img class="hero__posters-img" src="./images/heroimg/poster2-1.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster2-2.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster2-3.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster2-4.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster2-5.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster2-6.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster2-7.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster2-8.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster2-9.png" alt="">
+                </div>
+                <div class="hero__posters-box3">
+                    <img class="hero__posters-img" src="./images/heroimg/poster3-1.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster3-2.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster3-3.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster3-4.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster3-5.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster3-6.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster3-7.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster3-8.png" alt="">
+                    <img class="hero__posters-img" src="./images/heroimg/poster3-9.png" alt="">
+                </div>
+            </div>
             <div class="hero__title">
                 <h1 class="hero__name">The Best Streaming Experience</h1>
-                <p class="hero__description">StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere.</p>
-                <button class="hero__btn">Start Watching Now</button>
+                <p class="hero__description">StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere.<span class="hero__description-more">With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch.
+                </span>
+            </p>
+                <button class="hero__btn">
+                    <svg class="hero__btn-icon" width="24px" height="24px" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-play"></use>
+                    </svg>
+                    Start Watching Now</button>
+            </div>
+            <div class="hero__fadeouttop"></div>
+            <div class="hero__fadeoutbottom"></div>            
+    
+        </section> 
+        <section class="categories">
+            <div class="categories__container">
+                <div class="categories__title">
+                    <div>
+                        <h2 class="categories__title-name">Explore our wide variety of categories</h2>
+                        <p class="categories__title-description">Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new</p>
+                    </div>
+                    <div class="categories__title-btns">
+                        <button class="categories__btn-prev">
+                            <svg class="categories__btn-icon" width="24px" height="24px"aria-hidden="true">
+                                <use href="./images/icons.svg#icon-arrow-left"></use>
+                            </svg>
+                        </button>
+                        <div class="categories__pagination">
+                            
+                        </div>
+                        <button class="categories__btn-next">
+                            <svg class="categories__btn-icon" width="24px" height="24px"aria-hidden="true">
+                                <use href="./images/icons.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <ul class="categories__list">
+                    <li class="categories__item">
+                        <div class="categories__img">
+                            <img class="categories__film-img" src="./images/categoriesimg/film1.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film2.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film3.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film4.png" alt=""/>
+                            <div class="categories__film-fade"></div>
+                        </div>
+                        <div class="categories__item-title">
+                            <h4 class="categories__item-name">Action</h4>  
+                            <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                <use href="./images/icons.svg#icon-arrow-right"></use>
+                            </svg> 
+                        </div>
+                    </li>
+                    <li class="categories__item">
+                        <div class="categories__img">
+                            <img class="categories__film-img" src="./images/categoriesimg/film5.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film6.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film7.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film8.png" alt=""/>
+                            <div class="categories__film-fade"></div>
+                        </div>
+                        <div class="categories__item-title">
+                            <h4 class="categories__item-name">Adventure</h4>
+                            <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                <use href="./images/icons.svg#icon-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="categories__item">
+                        <div class="categories__img">
+                            <img class="categories__film-img" src="./images/categoriesimg/film9.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film10.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film11.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film12.png" alt=""/>
+                            <div class="categories__film-fade"></div>
+                        </div>
+                        <div class="categories__item-title">
+                            <h4 class="categories__item-name">Comedy</h4>
+                            <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                <use href="./images/icons.svg#icon-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="categories__item">
+                        <div class="categories__img">
+                            <img class="categories__film-img" src="./images/categoriesimg/film13.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film14.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film15.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film16.png" alt=""/>
+                            <div class="categories__film-fade"></div>
+                        </div>
+                        <div class="categories__item-title">
+                            <h4 class="categories__item-name">Drama</h4>
+                            <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                <use href="./images/icons.svg#icon-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="categories__item">
+                        <div class="categories__img">
+                            <img class="categories__film-img" src="./images/categoriesimg/film17.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film18.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film19.png" alt=""/>
+                            <img class="categories__film-img" src="./images/categoriesimg/film20.png" alt=""/>
+                            <div class="categories__film-fade"></div>
+                        </div>
+                        <div class="categories__item-title">
+                            <h4 class="categories__item-name">Horror</h4>
+                            <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                <use href="./images/icons.svg#icon-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
         
