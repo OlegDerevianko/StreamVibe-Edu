@@ -4,7 +4,7 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  background-color: var(--black-15); }
+  background-color: var(--black-08); }
 
 :root {
   --font-family: "Manrope", sans-serif;
@@ -732,5 +732,115 @@ summary {
     .categories__item-icon {
       width: 30px;
       height: 30px; } }
+
+.devices {
+  max-width: 390px;
+  margin: auto;
+  padding: 40px 16px; }
+  @media screen and (min-width: 1440px) {
+    .devices {
+      min-width: 1440px;
+      padding: 60px 80px; } }
+  @media screen and (min-width: 1920px) {
+    .devices {
+      min-width: 1920px;
+      padding: 75px 162px 75px 162px; } }
+  .devices__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+    @media screen and (min-width: 1440px) {
+      .devices__list {
+        flex-direction: inherit;
+        flex-wrap: wrap; } }
+    @media screen and (min-width: 1920px) {
+      .devices__list {
+        gap: 30px; } }
+  .devices__item {
+    border: 1px solid #262626;
+    border-radius: 10px;
+    background: linear-gradient(229.83deg, rgba(229, 0, 0, 0.5) -226.884%, rgba(229, 0, 0, 0) 38.033%), #0f0f0f;
+    padding: 24px; }
+    @media screen and (min-width: 1440px) {
+      .devices__item {
+        width: 413px;
+        padding: 40px; } }
+    @media screen and (min-width: 1920px) {
+      .devices__item {
+        width: 512px;
+        padding: 50px; } }
+  .devices__title {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: left;
+    margin-bottom: 10px; }
+    @media screen and (min-width: 1440px) {
+      .devices__title {
+        font-size: 28px;
+        font-weight: 700; } }
+    @media screen and (min-width: 1920px) {
+      .devices__title {
+        font-size: 38px;
+        font-weight: 700; } }
+  .devices__title-description {
+    color: #999999;
+    line-height: 150%;
+    text-align: left;
+    margin-bottom: 40px; }
+    @media screen and (min-width: 1440px) {
+      .devices__title-description {
+        font-size: 16px; } }
+    @media screen and (min-width: 1920px) {
+      .devices__title-description {
+        font-size: 18px; } }
+  .devices__item-title {
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+  .devices__icon-thumb {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #1f1f1f;
+    border-radius: 8px;
+    background: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media screen and (min-width: 1440px) {
+      .devices__icon-thumb {
+        width: 54px;
+        height: 54px; } }
+    @media screen and (min-width: 1920px) {
+      .devices__icon-thumb {
+        width: 72px;
+        height: 72px; } }
+  .devices__icon {
+    width: 24px;
+    height: 24px; }
+    @media screen and (min-width: 1440px) {
+      .devices__icon {
+        width: 30px;
+        height: 30px; } }
+    @media screen and (min-width: 1920px) {
+      .devices__icon {
+        width: 40px;
+        height: 40px; } }
+  .devices__name {
+    color: white;
+    font-size: 18px;
+    font-weight: 600; }
+  .devices__description {
+    color: #999999;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin-top: 20px; }
+    @media screen and (min-width: 1440px) {
+      .devices__description {
+        font-size: 16px; } }
+    @media screen and (min-width: 1920px) {
+      .devices__description {
+        font-size: 18px; } }
 
 /*# sourceMappingURL=main.css.map */
