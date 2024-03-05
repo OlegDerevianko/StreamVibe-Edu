@@ -1,0 +1,143 @@
+.cta {
+    max-width: 390px;
+    margin: auto;
+    padding: 40px 16px 80px 16px; 
+    
+    @media screen and (min-width: 1440px) {
+        min-width: 1440px;
+        padding: 60px 80px 120px 80px;
+    }
+    @media screen and (min-width: 1920px) {
+        min-width: 1920px;
+        padding: 75px 162px 150px 162px;
+    }
+    &__posters {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;        
+        overflow: hidden;
+        align-items: center;
+        border: 1px solid var(--black-15);
+        border-radius: 12px;
+        background-color: var(--black-06);        
+        @media screen and (min-width: 1920px) {
+        }
+    }
+    &__posters-box, &__posters-box1, &__posters-box2, &__posters-box3 {
+        display: flex;
+        gap: 20px;
+    }    
+    &__posters-img:nth-child(n+6) {
+        display: none;
+        @media screen and (min-width: 1440px) {
+            display: block;
+        }
+    }
+    &__posters-img:nth-child(-n + 2) {
+        @media screen and (min-width: 1440px) {
+            display: block;
+        }
+    }
+    &__fade-out-left {
+        position: absolute;
+        z-index: 1;
+        width: 1283px;
+        height: 646px;
+        background: linear-gradient(180.00deg, 
+        rgb(15, 15, 15),
+        rgba(20, 15, 15, 0.97) 29.279%,
+        rgba(34, 14, 14, 0.91) 58.559%,
+        rgba(229, 0, 0, 0) 87.838%);
+        @media screen and (min-width: 1440px) {
+            width: 1283px;
+            height: 344px;            
+            background: linear-gradient(90.00deg, 
+            rgb(15, 15, 15) 2.402%,
+            rgba(20, 15, 15, 0.97) 25.449%,
+            rgba(34, 14, 14, 0.91) 46.722%,
+            rgba(229, 0, 0, 0) 169.046%);
+        }
+        @media screen and (min-width: 1920px) {
+            width: 1646px;
+        }        
+    }
+    &__container {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        @media screen and (min-width: 1440px) {
+            width: 1163px;
+            top: 120px;
+            left: 60px;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        @media screen and (min-width: 1920px) {
+            width: 1436px;
+            top: 100px;
+            left: 80px;
+        }
+    }    
+    &__title-name {
+        text-align: center;
+        color: var(--absolute-white);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 150%;
+        @media screen and (min-width: 1440px) {
+            text-align: start;
+            font-size: 28px;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 48px;
+        }
+    }
+    &__title-description {
+        text-align: center;
+        margin-top: 10px;
+        color: var(--grey-60);
+        line-height: 150%;
+        @media screen and (min-width: 1440px) {
+            text-align: start;
+            font-size: 16px;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
+            margin-top: 14px;
+        }
+    }
+    &__btn {
+        width: auto;
+        margin-top: 50px;
+        cursor: pointer;
+        padding: 14px 20px;
+        color: var(--absolute-white);
+        font-weight: 600;
+        line-height: 150%;
+        border-radius: 6px;
+        border: 1px solid var(--red-45);
+        background: var(--red-45);
+        box-shadow: 0 0 25px var(--red-45);
+        transition: 0.5s;
+        transition-property: box-shadow;
+        @media screen and (min-width: 1440px) {
+            border-radius: 8px;
+            margin-top: 0;
+        }
+        @media screen and (min-width: 1920px) {
+            padding: 18px 24px;
+            font-size: 18px;
+        }
+    }
+    &__btn:hover {
+        // animation: shake3856 0.3s linear infinite both;
+        box-shadow: 0 0 5px var(--red-45),
+            0 0 25px var(--red-45),
+            0 0 50px var(--red-45),
+            0 0 100px var(--red-45);
+    }
+}

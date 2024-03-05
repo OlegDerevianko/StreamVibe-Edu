@@ -1,0 +1,169 @@
+.footer {
+    max-width: 390px;
+    margin: auto;
+    padding: 50px 16px 20px 16px; 
+    background-color: var(--black-06);
+    @media screen and (min-width: 1440px) {
+        min-width: 1440px;
+        padding: 80px 80px 60px 80px;
+    }
+    @media screen and (min-width: 1920px) {
+        min-width: 1920px;
+        padding: 100px 162px 50px 162px;
+    }
+    &__nav {
+        border-bottom: 1px solid var(--black-15);
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        @media screen and (min-width: 1440px) {
+            padding-bottom: 80px;
+        }
+        @media screen and (min-width: 1920px) {
+            padding-bottom: 100px;
+        }
+    }
+    &__list {
+        @media screen and (min-width: 1440px) {
+            margin-right: 20px;
+        }
+        @media screen and (min-width: 1920px) {
+            margin-right: 30px;
+        }
+    }    
+    &__item {
+        width: 179px;
+        margin-bottom: 8px;
+        @media screen and (min-width: 1440px) {
+            margin-bottom: 10px;
+            width: 197px;
+        }
+        @media screen and (min-width: 1920px) {
+            margin-bottom: 14px;
+            width: 241px;
+        }
+    }
+    &__item:first-child {
+        margin-bottom: 16px;
+        @media screen and (min-width: 1440px) {
+            margin-bottom: 20px;
+        }
+        @media screen and (min-width: 1920px) {
+            margin-bottom: 24px;
+        }
+    }
+    &__item:last-child {
+        margin-bottom: 30px;
+        @media screen and (min-width: 1440px) {
+            margin-bottom: 0;
+        }
+    }
+    &__link {
+        color: var(--grey-60);
+        font-weight: 500;
+        line-height: 150%;
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
+        }
+    }
+    &__link:hover {
+        color: var(--absolute-white);
+    }
+    &__link-main {
+        color: var(--absolute-white);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 150%;
+        @media screen and (min-width: 1440px) {
+            font-size: 18px;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 20px;
+        }
+    }
+    &__socials-title {
+        color: var(--absolute-white);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 150%;
+        @media screen and (min-width: 1440px) {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    &__socials-container {
+        display: flex;
+        gap: 10px;
+        @media screen and (min-width: 1920px) {
+            gap: 14px;
+        }
+    }
+    &__socials-box {
+        border: 1px solid var(--black-15);
+        border-radius: 6px;
+        background-color: var(--black-10);
+        width: 44px;
+        height: 44px;
+        padding: 12px;
+        @media screen and (min-width: 1920px) {
+            width: 56px;
+            height: 56px;
+            padding: 16px;
+        }
+    }
+    &__socials-facebook-icon {
+        @media screen and (min-width: 1920px) {
+            width: 24px;
+            height: 24px;
+        }
+    }    
+    &__rights {
+        margin-top: 20px;
+        @media screen and (min-width: 1440px) {
+            display: flex;
+            justify-content: space-between;
+        }
+        @media screen and (min-width: 1920px) {
+            margin-top: 24px;
+        }
+    }
+    &__rights-title {
+        color: var(--grey-60);
+        margin-bottom: 20px;
+        @media screen and (min-width: 1440px) {
+            margin-bottom: 0;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
+        }        
+    }
+    &__rights-list {
+        display: flex;
+    }
+    &__rights-item {
+        padding: 0 16px;
+        border-right: 1px solid var(--black-15);
+        @media screen and (min-width: 1920px) {
+            padding: 0 20px;
+        }
+    }
+    &__rights-item:first-child {
+        padding-left: 0;
+    }
+    &__rights-item:last-child {
+        padding-right: 0;
+        border-right: 0;
+    }
+    &__rights-link {
+        color: var(--grey-60);
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
+        }
+    }
+    &__rights-link:hover {
+        color: var(--absolute-white);
+    }
+}

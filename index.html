@@ -6,6 +6,8 @@
     <title>StreamVibe</title>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="./css/swiper-bundle.css"></script> -->
 
 </head>
 <body>   
@@ -139,83 +141,221 @@
                         </button>
                     </div>
                 </div>
-                <ul class="categories__list">
-                    <li class="categories__item">
-                        <div class="categories__img">
-                            <img class="categories__film-img" src="./images/categoriesimg/film1.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film2.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film3.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film4.png" alt=""/>
-                            <div class="categories__film-fade"></div>
-                        </div>
-                        <div class="categories__item-title">
-                            <h4 class="categories__item-name">Action</h4>  
-                            <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
-                                <use href="./images/icons.svg#icon-arrow-right"></use>
-                            </svg> 
-                        </div>
-                    </li>
-                    <li class="categories__item">
-                        <div class="categories__img">
-                            <img class="categories__film-img" src="./images/categoriesimg/film5.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film6.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film7.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film8.png" alt=""/>
-                            <div class="categories__film-fade"></div>
-                        </div>
-                        <div class="categories__item-title">
-                            <h4 class="categories__item-name">Adventure</h4>
-                            <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
-                                <use href="./images/icons.svg#icon-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </li>
-                    <li class="categories__item">
-                        <div class="categories__img">
-                            <img class="categories__film-img" src="./images/categoriesimg/film9.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film10.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film11.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film12.png" alt=""/>
-                            <div class="categories__film-fade"></div>
-                        </div>
-                        <div class="categories__item-title">
-                            <h4 class="categories__item-name">Comedy</h4>
-                            <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
-                                <use href="./images/icons.svg#icon-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </li>
-                    <li class="categories__item">
-                        <div class="categories__img">
-                            <img class="categories__film-img" src="./images/categoriesimg/film13.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film14.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film15.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film16.png" alt=""/>
-                            <div class="categories__film-fade"></div>
-                        </div>
-                        <div class="categories__item-title">
-                            <h4 class="categories__item-name">Drama</h4>
-                            <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
-                                <use href="./images/icons.svg#icon-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </li>
-                    <li class="categories__item">
-                        <div class="categories__img">
-                            <img class="categories__film-img" src="./images/categoriesimg/film17.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film18.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film19.png" alt=""/>
-                            <img class="categories__film-img" src="./images/categoriesimg/film20.png" alt=""/>
-                            <div class="categories__film-fade"></div>
-                        </div>
-                        <div class="categories__item-title">
-                            <h4 class="categories__item-name">Horror</h4>
-                            <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
-                                <use href="./images/icons.svg#icon-arrow-right"></use>
-                            </svg>
-                        </div>
-                    </li>
-                </ul>
+                <div class="categories__swiper swiper">
+                    <ul class="categories__list swiper-wrapper">
+                        <li class="categories__item swiper-slide">
+                            <a href="">
+                                <div class="categories__img">
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film1.png" alt=""/>
+                                    <img class="categories__film-img" src="./images/categoriesimg/film2.png" alt=""/>
+                                    </div>
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film3.png" alt=""/>
+                                    <img class="categories__film-img" src="./images/categoriesimg/film4.png" alt=""/>
+                                    </div>
+                                    <div class="categories__film-fade"></div>
+                                </div>
+                                <div class="categories__item-title">
+                                    <h4 class="categories__item-name">Action</h4>  
+                                    <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                                    </svg> 
+                                </div>
+                            </a>
+                        </li>
+                        <li class="categories__item swiper-slide">
+                            <a href="">
+                                <div class="categories__img">
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film5.png" alt=""/>
+                                    <img class="categories__film-img" src="./images/categoriesimg/film6.png" alt=""/>
+                                    </div>                                    
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film7.png" alt=""/>
+                                    <img class="categories__film-img" src="./images/categoriesimg/film8.png" alt=""/>
+                                    </div>                                    
+                                    <div class="categories__film-fade"></div>
+                                </div>
+                                <div class="categories__item-title">
+                                    <h4 class="categories__item-name">Adventure</h4>
+                                    <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="categories__item swiper-slide">
+                            <a href="">
+                                <div class="categories__img">
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film9.png" alt=""/>
+                                        <img class="categories__film-img" src="./images/categoriesimg/film10.png" alt=""/>
+                                    </div>                                        
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film11.png" alt=""/>
+                                        <img class="categories__film-img" src="./images/categoriesimg/film12.png" alt=""/>
+                                    </div>                                        
+                                    <div class="categories__film-fade"></div>
+                                </div>
+                                <div class="categories__item-title">
+                                    <h4 class="categories__item-name">Comedy</h4>
+                                    <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="categories__item swiper-slide">
+                            <a href="">
+                                <div class="categories__img">
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film13.png" alt=""/>
+                                        <img class="categories__film-img" src="./images/categoriesimg/film14.png" alt=""/>
+                                    </div>
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film15.png" alt=""/>
+                                        <img class="categories__film-img" src="./images/categoriesimg/film16.png" alt=""/>
+                                    </div>
+                                    <div class="categories__film-fade"></div>
+                                </div>
+                                <div class="categories__item-title">
+                                    <h4 class="categories__item-name">Drama</h4>
+                                    <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="categories__item swiper-slide">
+                            <a href="">
+                                <div class="categories__img">
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film17.png" alt=""/>
+                                        <img class="categories__film-img" src="./images/categoriesimg/film18.png" alt=""/>    
+                                    </div>
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film19.png" alt=""/>
+                                        <img class="categories__film-img" src="./images/categoriesimg/film20.png" alt=""/>    
+                                    </div>
+                                    <div class="categories__film-fade"></div>
+                                </div>
+                                <div class="categories__item-title">
+                                    <h4 class="categories__item-name">Horror</h4>
+                                    <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="categories__item swiper-slide">
+                            <a href="">
+                                <div class="categories__img">
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film1.png" alt=""/>
+                                    <img class="categories__film-img" src="./images/categoriesimg/film2.png" alt=""/>
+                                    </div>
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film3.png" alt=""/>
+                                    <img class="categories__film-img" src="./images/categoriesimg/film4.png" alt=""/>
+                                    </div>
+                                    <div class="categories__film-fade"></div>
+                                </div>
+                                <div class="categories__item-title">
+                                    <h4 class="categories__item-name">Action</h4>  
+                                    <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                                    </svg> 
+                                </div>
+                            </a>
+                        </li>
+                        <li class="categories__item swiper-slide">
+                            <a href="">
+                                <div class="categories__img">
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film5.png" alt=""/>
+                                    <img class="categories__film-img" src="./images/categoriesimg/film6.png" alt=""/>
+                                    </div>                                    
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film7.png" alt=""/>
+                                    <img class="categories__film-img" src="./images/categoriesimg/film8.png" alt=""/>
+                                    </div>                                    
+                                    <div class="categories__film-fade"></div>
+                                </div>
+                                <div class="categories__item-title">
+                                    <h4 class="categories__item-name">Adventure</h4>
+                                    <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="categories__item swiper-slide">
+                            <a href="">
+                                <div class="categories__img">
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film9.png" alt=""/>
+                                        <img class="categories__film-img" src="./images/categoriesimg/film10.png" alt=""/>
+                                    </div>                                        
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film11.png" alt=""/>
+                                        <img class="categories__film-img" src="./images/categoriesimg/film12.png" alt=""/>
+                                    </div>                                        
+                                    <div class="categories__film-fade"></div>
+                                </div>
+                                <div class="categories__item-title">
+                                    <h4 class="categories__item-name">Comedy</h4>
+                                    <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="categories__item swiper-slide">
+                            <a href="">
+                                <div class="categories__img">
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film13.png" alt=""/>
+                                        <img class="categories__film-img" src="./images/categoriesimg/film14.png" alt=""/>
+                                    </div>
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film15.png" alt=""/>
+                                        <img class="categories__film-img" src="./images/categoriesimg/film16.png" alt=""/>
+                                    </div>
+                                    <div class="categories__film-fade"></div>
+                                </div>
+                                <div class="categories__item-title">
+                                    <h4 class="categories__item-name">Drama</h4>
+                                    <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="categories__item swiper-slide">
+                            <a href="">
+                                <div class="categories__img">
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film17.png" alt=""/>
+                                        <img class="categories__film-img" src="./images/categoriesimg/film18.png" alt=""/>    
+                                    </div>
+                                    <div class="categories__img-inner">
+                                        <img class="categories__film-img" src="./images/categoriesimg/film19.png" alt=""/>
+                                        <img class="categories__film-img" src="./images/categoriesimg/film20.png" alt=""/>    
+                                    </div>
+                                    <div class="categories__film-fade"></div>
+                                </div>
+                                <div class="categories__item-title">
+                                    <h4 class="categories__item-name">Horror</h4>
+                                    <svg class="categories__item-icon" width="20px" height="20px"aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="devices">
@@ -301,9 +441,231 @@
             </ul>
             </div>
         </section>
-        
+
+        <section class="pricing">
+            <div class="pricing__container">
+                <div class="pricing__title">
+                    <div>
+                        <h2 class="pricing__title-name">Choose the plan that's right for you</h2>
+                        <p class="pricing__title-description">Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!</p>
+                    </div>
+                    <div class="pricing__title-btns">
+                        <button class="pricing__btn-month current">Monthly</button>
+                        <button class="pricing__btn-year">Yearly</button>
+                    </div>
+                </div>
+                <ul class="pricing__list">
+                    <li class="pricing__item">
+                        <h3 class="pricing__item-plan">Basic Plan</h3>
+                        <p class="pricing__item-description">Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.</p>
+                        <span class="pricing__item-price">$9.99
+                            <span class="pricing__item-month">/month</span>
+                        </span>
+                        <div class="pricing__item-btns">
+                            <button class="pricing__item-start-btn">Start Free Trial</button>
+                            <button class="pricing__item-choose-btn">Choose Plan</button>
+                        </div>
+                    </li>
+                    <li class="pricing__item">
+                        <h3 class="pricing__item-plan">Standard Plan</h3>
+                        <p class="pricing__item-description">Access to a wider selection of movies and shows, including most new releases and exclusive content</p>
+                        <span class="pricing__item-price">$12.99
+                            <span class="pricing__item-month">/month</span>
+                        </span>
+                        <div class="pricing__item-btns">
+                            <button class="pricing__item-start-btn">Start Free Trial</button>
+                            <button class="pricing__item-choose-btn">Choose Plan</button>
+                        </div>
+                    </li>
+                    <li class="pricing__item">
+                        <h3 class="pricing__item-plan">Premium Plan</h3>
+                        <p class="pricing__item-description">Access to a widest selection of movies and shows, including all new releases and Offline Viewing</p>
+                        <span class="pricing__item-price">$14.99
+                            <span class="pricing__item-month">/month</span>
+                        </span>
+                        <div class="pricing__item-btns">
+                            <button class="pricing__item-start-btn">Start Free Trial</button>
+                            <button class="pricing__item-choose-btn">Choose Plan</button>
+                        </div>
+                    </li>
+                </ul>    
+            </div>
+
+        </section>
+        <section class="cta">
+            <div class="cta__posters">
+                <div class="cta__posters-box">                    
+                    <img class="cta__posters-img" src="./images/ctaimage/poster1.png" alt=""/>
+                    <img class="cta__posters-img" src="./images/ctaimage/poster2.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster3.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster4.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster5.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster6.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster7.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster8.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster9.png" alt="">
+                </div>
+                <div class="cta__posters-box1">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster10.png" alt=""/>
+                    <img class="cta__posters-img" src="./images/ctaimage/poster11.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster12.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster13.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster14.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster15.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster16.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster17.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster18.png" alt="">
+                </div>
+                <div class="cta__posters-box2">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster19.png" alt=""/>
+                    <img class="cta__posters-img" src="./images/ctaimage/poster20.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster21.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster22.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster23.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster24.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster25.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster26.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster27.png" alt="">
+                </div>
+                <div class="cta__posters-box3">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster28.png" alt=""/>
+                    <img class="cta__posters-img" src="./images/ctaimage/poster29.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster30.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster31.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster32.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster33.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster34.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster35.png" alt="">
+                    <img class="cta__posters-img" src="./images/ctaimage/poster36.png" alt="">
+                </div>
+                <div class="cta__fade-out-left"></div>
+                <div class="cta__container">
+                    <div class="cta__title">
+                        <h3 class="cta__title-name">Start your free trial today!</h3>
+                        <p class="cta__title-description">This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+                    </div>
+                    <button class="cta__btn">Start a Free Trail</button>
+                </div>
+            </div>
+        </section>        
     </main>
-    <footer> </footer> 
+    <footer class="footer">
+        <div class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__link footer__link-main" href="">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">Categories</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">Devices</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">Pricing</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">FAQ</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__link footer__link-main" href="">Movies</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">Gernes</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">Trending</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">New Release</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">Popular</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__link footer__link-main" href="">Shows</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">Gernes</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">Trending</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">New Release</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">Popular</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__link footer__link-main" href="">Support</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">Contact Us</a>
+                </li>                
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__link footer__link-main" href="">Subscription</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">Plans</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">Features</a>
+                </li>                
+            </ul>
+            <div class="footer__socials">
+                <h4 class="footer__socials-title">Connect With Us</h4>
+                <div class="footer__socials-container">
+                    <div class="footer__socials-box">
+                        <a class="footer__socials-link" href="/index.html">
+                            <svg class="footer__socials-facebook-icon" width="20px" height="20px" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>                        
+                        </a>  
+                    </div>
+                    <div class="footer__socials-box">
+                        <a class="footer__socials-link" href="/index.html">
+                            <svg class="footer__socials-twitter-icon" width="20px" height="20px" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>                        
+                        </a>  
+                    </div>
+                    <div class="footer__socials-box">
+                        <a class="footer__socials-link" href="/index.html">
+                            <svg class="footer__socials-linkedin-icon" width="20px" height="20px" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>                        
+                        </a>  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__rights">
+            <p class="footer__rights-title">@2023 streamvib, All Rights Reserved</p>
+            <ul class="footer__rights-list">
+                <li class="footer__rights-item">
+                    <a class="footer__rights-link" href="">Terms of Use</a>
+                </li>
+                <li class="footer__rights-item">
+                    <a class="footer__rights-link" href="">Privacy Policy</a>
+                </li>
+                <li class="footer__rights-item">
+                    <a class="footer__rights-link" href="">Cookie Policy</a>
+                </li>
+            </ul>
+        </div>
+    </footer> 
+    
+    <script src="./js/slider.js"></script>
 
 </body>
 

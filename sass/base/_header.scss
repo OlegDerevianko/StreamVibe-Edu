@@ -56,19 +56,20 @@
     }
     &__item {
         color: var(--grey-75);
-        padding: 12px 20px;
-        @media screen and (min-width: 1920px) {            
-            padding: 14px 24px;
-        }                   
+        transition: 0.5s;                       
     }
-    &__item:hover {
+    &__link:hover {
         border-radius: 8px;
         background-color: var(--black-10);
     }
     &__link {
         color: var(--grey-75);
+        padding: 12px 20px;
+
+        transition: 0.5s;
         @media screen and (min-width: 1920px) {            
             font-size: 18px;
+            padding: 14px 24px;
         } 
     }
     &__btn-container {       
