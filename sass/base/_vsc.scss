@@ -1,0 +1,136 @@
+.vsc {
+    width: 390px;
+    margin: auto;
+    padding: 40px 16px 30px 16px;
+    @media screen and (min-width: 1440px) {
+        min-width: 1440px;
+        padding: 40px 80px;
+    }
+    @media screen and (min-width: 1920px) {
+        min-width: 1920px;
+        padding: 50px 162px;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 24px 24px 16px 24px;
+        border-radius: 12px;
+        height: 468px;
+        background-image:linear-gradient(0.00deg, rgb(20, 20, 20),rgba(20, 20, 20, 0) 100%), url(/images/kantara.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media screen and (min-width: 1440px) {
+            padding: 40px 40px 16px 40px;
+            height: 709px;
+        }
+        @media screen and (min-width: 1920px) {
+            padding: 50px 50px 20px 50px;
+            height: 835px;
+        }
+    }    
+    &__title-name {
+        text-align: center;
+        color: var(--absolute-white);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 150%;
+        @media screen and (min-width: 1440px) {
+            font-size: 30px;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 38px;
+        }
+    }
+    &__title-description {
+        display: none;
+        text-align: center;
+        color: var(--grey-60);
+        font-size: 16px;
+        line-height: 150%;
+        @media screen and (min-width: 1440px) {
+            display: block;
+            margin-top: 2px;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
+            margin-top: 4px;
+        }
+    }
+    &__btns {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
+        // align-items: center;
+        @media screen and (min-width: 1440px) {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 24px;
+        }
+        @media screen and (min-width: 1920px) {
+            margin-top:30px;
+        }
+    }
+    &__btns-play {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        cursor: pointer;
+        background-color: var(--red-45);
+        border: 1px solid var(--red-45);
+        color: var(--absolute-white);
+        border-radius: 8px;
+        padding: 14px 20px;
+        font-weight: 600;
+        line-height: 153%;
+        box-shadow: 0 0 25px var(--red-45);
+        transition: 0.5s;
+        transition-property: box-shadow;
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;            
+        }
+    }
+    &__btns-play:hover {
+        // animation: shake3856 0.3s linear infinite both;
+        box-shadow: 0 0 5px var(--red-45),
+            0 0 25px var(--red-45),
+            0 0 50px var(--red-45),
+    }
+    &__btns-play-icon {
+        @media screen and (min-width: 1920px) {
+            width: 28px;
+            height: 28px;         
+        }
+    }
+    &__btns-container {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        @media screen and (min-width: 1920px) {
+            gap: 10px;
+        }
+    }
+    &__btns-add, &__btns-like, &__btns-voice {
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        background-color: var(--black-06);
+        border: 1px solid var(--black-15);
+        padding: 12px;
+        @media screen and (min-width: 1920px) {
+            width: 56px;
+            height: 56px;
+        }
+    }
+    &__btns-add-icon, &__btns-like-icon, &__btns-add-voice {
+        @media screen and (min-width: 1920px) {
+            width: 28px;
+            height: 28px;
+        }
+    }
+}

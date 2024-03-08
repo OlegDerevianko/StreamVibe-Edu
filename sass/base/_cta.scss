@@ -1,8 +1,7 @@
 .cta {
     max-width: 390px;
     margin: auto;
-    padding: 40px 16px 80px 16px; 
-    
+    padding: 40px 16px 80px 16px;     
     @media screen and (min-width: 1440px) {
         min-width: 1440px;
         padding: 60px 80px 120px 80px;
@@ -138,6 +137,5 @@
         box-shadow: 0 0 5px var(--red-45),
             0 0 25px var(--red-45),
             0 0 50px var(--red-45),
-            0 0 100px var(--red-45);
     }
 }
