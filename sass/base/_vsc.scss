@@ -95,7 +95,6 @@
         }
     }
     &__btns-play:hover {
-        // animation: shake3856 0.3s linear infinite both;
         box-shadow: 0 0 5px var(--red-45),
             0 0 25px var(--red-45),
             0 0 50px var(--red-45),
@@ -126,7 +125,7 @@
             width: 56px;
             height: 56px;
         }
-    }
+    }    
     &__btns-add-icon, &__btns-like-icon, &__btns-add-voice {
         @media screen and (min-width: 1920px) {
             width: 28px;
