@@ -759,15 +759,17 @@ summary {
         gap: 16px;
         border-radius: 12px; } }
   .categories__pagination {
-    display: flex; }
-  .categories .swiper-pagination-bullet {
+    display: flex;
+    gap: 3px;
+    align-items: center; }
+  .categories__pagination-span {
+    display: flex;
     height: 4px;
     width: 16px;
-    margin-right: 3px;
+    border-radius: 100px;
     background-color: var(--black-20); }
-  .categories .swiper-pagination-bullet-active {
-    height: 4px;
-    width: 24px;
+  .categories__pagination-span:first-child {
+    width: 22px;
     background-color: var(--red-45); }
   .categories__btn-prev, .categories__btn-next {
     display: flex;
@@ -787,11 +789,10 @@ summary {
     .categories__btn-icon {
       width: 28px;
       height: 28px; } }
-  .categories__swiper {
-    overflow: hidden; }
   .categories__list {
     margin-top: 40px;
-    display: flex; }
+    display: flex;
+    gap: 20px; }
     @media screen and (min-width: 1440px) {
       .categories__list {
         margin-top: 60px; } }
@@ -1160,6 +1161,7 @@ summary {
     border: 1px solid var(--black-15);
     border-radius: 6px;
     background: var(--black-08);
+    box-shadow: 0 0 25px var(--red-45);
     transition: 0.5s; }
     @media screen and (min-width: 1920px) {
       .pricing__item-start-btn {
@@ -1169,7 +1171,8 @@ summary {
   .pricing__item-start-btn:hover {
     color: var(--absolute-white);
     border: 1px solid var(--red-45);
-    background: var(--red-45); }
+    background: var(--red-45);
+    box-shadow: 0 0 5px var(--red-45), 0 0 25px var(--red-45), 0 0 50px var(--red-45); }
   .pricing__item-choose-btn {
     cursor: pointer;
     padding: 14px 20px;
@@ -1179,6 +1182,7 @@ summary {
     border: 1px solid var(--black-15);
     border-radius: 6px;
     background: var(--black-08);
+    box-shadow: 0 0 25px var(--red-45);
     transition: 0.5s; }
     @media screen and (min-width: 1920px) {
       .pricing__item-choose-btn {
@@ -1188,7 +1192,8 @@ summary {
   .pricing__item-choose-btn:hover {
     color: var(--absolute-white);
     border: 1px solid var(--red-45);
-    background: var(--red-45); }
+    background: var(--red-45);
+    box-shadow: 0 0 5px var(--red-45), 0 0 25px var(--red-45), 0 0 50px var(--red-45); }
 
 .cta {
   max-width: 390px;
@@ -1213,6 +1218,12 @@ summary {
     border: 1px solid var(--black-15);
     border-radius: 12px;
     background-color: var(--black-06); }
+    @media screen and (min-width: 1440px) {
+      .cta__posters {
+        height: 236px; } }
+    @media screen and (min-width: 1920px) {
+      .cta__posters {
+        height: 313px; } }
   .cta__posters-box, .cta__posters-box1, .cta__posters-box2, .cta__posters-box3 {
     display: flex;
     gap: 20px; }
@@ -1247,7 +1258,7 @@ summary {
     @media screen and (min-width: 1440px) {
       .cta__container {
         width: 1163px;
-        top: 120px;
+        top: 80px;
         left: 60px;
         justify-content: space-between;
         flex-direction: row; } }
