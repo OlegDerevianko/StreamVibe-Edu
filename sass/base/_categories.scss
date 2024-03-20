@@ -96,6 +96,7 @@
         }
     }
     &__list {
+        overflow: hidden;
         margin-top: 40px;
         display: flex;
         gap: 20px;
